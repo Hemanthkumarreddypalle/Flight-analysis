@@ -1,0 +1,79 @@
+:root {
+  font-family: "Segoe UI", "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1e344c;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 12% 12%, #d8ebff 0%, #d8ebff00 36%),
+    radial-gradient(circle at 88% 10%, #bee3ff 0%, #bee3ff00 34%),
+    linear-gradient(165deg, #f3f9ff 0%, #dcecff 55%, #d2e7ff 100%);
+}
+
+#root-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 1.6rem 1rem;
+}
+
+#root {
+  width: 100%;
+  max-width: 1240px;
+}
+
+a {
+  color: #0b5dc8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #06489f;
+}
+
+button {
+  border-radius: 10px;
+  border: 1px solid #0b5dc833;
+  padding: 0.6em 1.2em;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0b5dc8, #2c9bff);
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(11, 93, 200, 0.25);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid #5bb5ff;
+  outline-offset: 2px;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #c4d7ea;
+  border-radius: 10px;
+  padding: 0.55rem 0.65rem;
+  background: #ffffff;
+  color: #1e344c;
+}

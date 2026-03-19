@@ -1,0 +1,11 @@
+{
+  "foundryUrl": "https://hemanthkumarreddypalle.euw-3.palantirfoundry.co.uk",
+  "site": {
+    "application": "ri.third-party-applications.main.application.6ce8c214-cac0-4013-b902-dcee748e0aa2",
+    "directory": "./dist",
+    "autoVersion": {
+      "type": "git-describe",
+      "tagPrefix": ""
+    }
+  }
+}
