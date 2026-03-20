@@ -11,9 +11,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@god/sdk": "latest",
+    "@god/sdk": "^0.2.0",
     "@osdk/api": "^2.7.5",
-    "@osdk/client": "^2.7.5",
+    "@osdk/client": "^2.7.6",
+    "@osdk/foundry": "^2.54.0",
     "@osdk/functions": "^1.5.2",
     "@osdk/oauth": "^1.7.0",
     "react": "^18",

@@ -1,0 +1,88 @@
+<svg width="1600" height="1100" viewBox="0 0 1600 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="110" y1="40" x2="1360" y2="980" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A4B8A"/>
+      <stop offset="0.45" stop-color="#2B89CA"/>
+      <stop offset="1" stop-color="#FDB565"/>
+    </linearGradient>
+    <linearGradient id="runway" x1="800" y1="500" x2="800" y2="1100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#44566B"/>
+      <stop offset="1" stop-color="#101A24"/>
+    </linearGradient>
+    <linearGradient id="haze" x1="0" y1="720" x2="0" y2="1100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F9FF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#F8FBFF" stop-opacity="0.92"/>
+    </linearGradient>
+    <filter id="blurLarge" x="-80" y="-80" width="1760" height="1260" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <filter id="blurSoft" x="-40" y="-40" width="1680" height="1180" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1100" fill="url(#sky)"/>
+
+  <g filter="url(#blurLarge)" opacity="0.44">
+    <g>
+      <ellipse cx="260" cy="210" rx="170" ry="54" fill="#F9FCFF"/>
+      <ellipse cx="420" cy="214" rx="120" ry="42" fill="#F9FCFF"/>
+      <animateTransform attributeName="transform" type="translate" values="-30 0; 20 10; -30 0" dur="24s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <ellipse cx="1210" cy="250" rx="190" ry="60" fill="#FDFEFF"/>
+      <ellipse cx="1060" cy="236" rx="118" ry="40" fill="#FDFEFF"/>
+      <animateTransform attributeName="transform" type="translate" values="20 0; -25 8; 20 0" dur="27s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <g opacity="0.5">
+    <path d="M0 784C202 722 358 690 526 707C682 723 748 786 920 794C1122 804 1282 690 1600 662V1100H0V784Z" fill="#16324D"/>
+    <path d="M0 834C194 768 408 800 590 852C760 900 984 944 1212 894C1360 862 1468 806 1600 784V1100H0V834Z" fill="#24486E" opacity="0.74"/>
+  </g>
+
+  <path d="M636 1100L771 520H829L964 1100H636Z" fill="url(#runway)"/>
+  <path d="M787 592H813V654H787V592Z" fill="#F8F1CD"/>
+  <path d="M787 698H813V760H787V698Z" fill="#F8F1CD"/>
+  <path d="M787 804H813V866H787V804Z" fill="#F8F1CD"/>
+  <path d="M787 910H813V972H787V910Z" fill="#F8F1CD"/>
+
+  <g opacity="0.36" filter="url(#blurSoft)">
+    <ellipse cx="800" cy="604" rx="178" ry="24" fill="#B6C8D9"/>
+    <animate attributeName="opacity" values="0.22;0.4;0.22" dur="6s" repeatCount="indefinite"/>
+  </g>
+
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="-220 46; 120 0; -220 46" dur="16s" repeatCount="indefinite"/>
+    <animateTransform additive="sum" attributeName="transform" type="rotate" values="-6 800 420; 1 800 420; -6 800 420" dur="16s" repeatCount="indefinite"/>
+
+    <g transform="translate(800 420)">
+      <g transform="scale(1.18)">
+        <path d="M44 -124C16 -120 -20 -108 -69 -86L-246 -8L-296 -15C-310 -17 -323 -10 -330 2L-335 12L-219 47L-132 69L-188 132L-254 141L-286 198L-259 204L-194 173L-133 165L-65 129L96 155L148 180L180 177L154 147L101 109L82 63L309 52C326 51 337 45 341 33L343 25L99 4L44 -124Z" fill="#F4F7FC"/>
+        <path d="M-56 -77L38 -83L61 2L-95 -7L-56 -77Z" fill="#D8E5F2"/>
+        <path d="M24 -123L43 -125L99 4L79 6L24 -123Z" fill="#C4D4E4"/>
+        <circle cx="-163" cy="26" r="12" fill="#83A4C5"/>
+      </g>
+    </g>
+  </g>
+
+  <g opacity="0.72" filter="url(#blurSoft)">
+    <g>
+      <ellipse cx="324" cy="614" rx="120" ry="26" fill="#FFFFFF"/>
+      <ellipse cx="430" cy="618" rx="82" ry="18" fill="#FFFFFF"/>
+      <animateTransform attributeName="transform" type="translate" values="-40 0; 55 -10; -40 0" dur="18s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <ellipse cx="1124" cy="574" rx="132" ry="28" fill="#FFFFFF"/>
+      <ellipse cx="1242" cy="580" rx="90" ry="20" fill="#FFFFFF"/>
+      <animateTransform attributeName="transform" type="translate" values="32 0; -40 12; 32 0" dur="20s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <rect x="88" y="640" width="474" height="120" rx="18" fill="#0C2031" opacity="0.48"/>
+  <rect x="114" y="610" width="72" height="150" rx="18" fill="#081A2A" opacity="0.64"/>
+  <rect x="1042" y="632" width="438" height="132" rx="20" fill="#0A1E2F" opacity="0.46"/>
+  <rect x="1098" y="604" width="60" height="160" rx="16" fill="#081A2A" opacity="0.64"/>
+
+  <rect width="1600" height="1100" fill="url(#haze)"/>
+</svg>

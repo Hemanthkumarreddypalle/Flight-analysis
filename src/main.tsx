@@ -5,10 +5,14 @@ import AppRouteError from "./AppRouteError";
 import StartupErrorBoundary from "./StartupErrorBoundary";
 import "./index.css";
 
+const AircraftPage = React.lazy(() => import("./pages/AircraftPage"));
+const AirportsPage = React.lazy(() => import("./pages/AirportsPage"));
 const AuthCallback = React.lazy(() => import("./AuthCallback"));
 const AuthStart = React.lazy(() => import("./AuthStart"));
 const AuthenticatedRoute = React.lazy(() => import("./AuthenticatedRoute"));
-const Home = React.lazy(() => import("./Home"));
+const FlightsPage = React.lazy(() => import("./pages/FlightsPage"));
+const HomePage = React.lazy(() => import("./pages/HomePage"));
+const RoutesPage = React.lazy(() => import("./pages/RoutesPage"));
 
 const router = createBrowserRouter(
   [
@@ -24,8 +28,40 @@ const router = createBrowserRouter(
         {
           path: "/",
           element: (
-            <Suspense fallback={<div>Loading dashboard...</div>}>
-              <Home />
+            <Suspense fallback={<div>Loading home page...</div>}>
+              <HomePage />
+            </Suspense>
+          ),
+        },
+        {
+          path: "airports",
+          element: (
+            <Suspense fallback={<div>Loading airports page...</div>}>
+              <AirportsPage />
+            </Suspense>
+          ),
+        },
+        {
+          path: "routes",
+          element: (
+            <Suspense fallback={<div>Loading routes page...</div>}>
+              <RoutesPage />
+            </Suspense>
+          ),
+        },
+        {
+          path: "flights",
+          element: (
+            <Suspense fallback={<div>Loading flights page...</div>}>
+              <FlightsPage />
+            </Suspense>
+          ),
+        },
+        {
+          path: "aircraft",
+          element: (
+            <Suspense fallback={<div>Loading aircraft page...</div>}>
+              <AircraftPage />
             </Suspense>
           ),
         },

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 160" role="img" aria-label="Flight image">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#d8ecff"/>
+      <stop offset="100%" stop-color="#f3faff"/>
+    </linearGradient>
+    <linearGradient id="plane" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#0b5dc8"/>
+      <stop offset="100%" stop-color="#2da9ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="260" height="160" rx="14" fill="url(#sky)"/>
+  <circle cx="42" cy="38" r="10" fill="#ffffff" opacity="0.75"/>
+  <circle cx="58" cy="34" r="13" fill="#ffffff" opacity="0.65"/>
+  <circle cx="77" cy="40" r="11" fill="#ffffff" opacity="0.75"/>
+  <circle cx="190" cy="47" r="9" fill="#ffffff" opacity="0.7"/>
+  <circle cx="205" cy="42" r="11" fill="#ffffff" opacity="0.65"/>
+  <path d="M32 120c22-14 49-24 87-28 37-4 73 0 109 12" fill="none" stroke="#9cc2e8" stroke-width="4" opacity="0.8"/>
+  <path d="M121 78l77-18c7-2 13 7 7 12l-42 30-12 34c-2 5-9 5-11 0l-7-20-21 13c-3 2-8-1-8-5v-13l-33-6c-6-1-7-9-2-11l52-16z" fill="url(#plane)"/>
+  <circle cx="150" cy="88" r="3" fill="#ffffff" opacity="0.8"/>
+  <circle cx="160" cy="85" r="2.6" fill="#ffffff" opacity="0.75"/>
+</svg>
