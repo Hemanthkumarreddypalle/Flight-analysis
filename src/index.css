@@ -20,9 +20,8 @@ body {
   height: 100dvh;
   overflow: hidden;
   background:
-    radial-gradient(circle at 12% 12%, #d8ebff 0%, #d8ebff00 36%),
-    radial-gradient(circle at 88% 10%, #bee3ff 0%, #bee3ff00 34%),
-    linear-gradient(165deg, #f3f9ff 0%, #dcecff 55%, #d2e7ff 100%);
+    linear-gradient(180deg, rgba(8, 18, 30, 0.14), rgba(10, 20, 32, 0.42)),
+    url("/flight-cinematic-background.svg") center / cover no-repeat fixed;
 }
 
 #root-container {
